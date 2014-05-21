@@ -1,0 +1,15 @@
+{% include "meddy1/header.html" %}
+	
+<legend><h1>{{userProfile.name}}'s Profile</h1></legend>
+
+
+	<h4>
+	<strong>Username:</strong> {{userAccount.username}}<br/><br/>
+					<strong>Name:</strong> {{userProfile.name}}<br/><br/>
+					<strong>Email: </strong>{{userAccount.email}}<br/><br/>
+					<strong>Skills: </strong>{{userProfile.skill.count}}<br/><br/>
+					<strong>Points: </strong>{{userProfile.points}}<br/>
+				</h4>
+
+
+{% include "meddy1/footer.html" %}
