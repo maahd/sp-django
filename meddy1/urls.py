@@ -12,5 +12,8 @@ urlpatterns = patterns('',
     url(r'^$', views.index, name='index'),
     url(r'^login/$', 'django.contrib.auth.views.login', {'template_name': 'meddy1/login.html'}, name="login"),
     url(r'^logout/$', views.logout_user, name="logout"),
+    # url(r'^users/(?P<slug>\w+)/$', UserProfileDetailView.as_view(), name="profile"),
+	# url(r'^profile/(?P<profile_id>\d+)/$', views.showProfile, name='showProfile'),
+	# url(r'^profile/$', views.showProfile, name='showProfile'),
 
 )

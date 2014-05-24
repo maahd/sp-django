@@ -40,11 +40,27 @@ def index(request):
 
 
 
- # def showSeekerProfile(request):
- #    profile = request.user.get_profile()
- #    return render(request,'meddy1/profile.html', d)
+def showProfile(request,):
+    profile = request.user.get_profile()
+    return render(request,'/profile.html')
 
 
+# from .models import *
+# # from .forms import UserProfileForm
+# from django.contrib.auth import get_user_model
+# from django.views.generic.edit import UpdateView
+# from django.core.urlresolvers import reverse
+
+
+# class UserProfileDetailView(DetailView):
+#     model = get_user_model()
+#     slug_field = "username"
+#     template_name = "seekerprofile.html"
+
+#     def get_object(self, queryset=None):
+#         user = super(UserProfileDetailView, self).get_object(queryset)
+#         DoctorSeeker.objects.get_or_create(user=user)
+#         return user
 
 # -------------------- Authentication ----------------------
 def signup(request):

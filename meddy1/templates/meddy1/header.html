@@ -93,6 +93,8 @@
 
         {% if user.is_authenticated %}
         <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> {{user}} <b class="caret"></b></a> </li>
+        <li><a href="/profile/{{user.id}}">My Profile</a></li>
+
       <ul class="dropdown-menu">
         <li class="dropdown-header">Profile</li>
         <li><a href="/profile/{{user.id}}">My Profile</a></li>

@@ -48,6 +48,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # 'polls',
     'meddy1',
+    'south',
     # 'meddy2',
 
 
